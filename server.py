@@ -1,7 +1,7 @@
 import socket
 if __name__ == "__main__":
     sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    sock.bind(("172.17.14.34",9999))
+    sock.bind((IP,PORT))
     sock.listen(10)
     while True:
         connection,address = sock.accept()
